@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        if (10 > 5) {
+            console.log('#1 wykona się')
+        }
+
+        if (3 <= 7) {
+            console.log('#2 wykona się')
+        }
+
+        if (0 <= 7) {
+            console.log('#3 wykona się')
+        }
+
+        let data1 = 9;
+        if (data1 > 5) {
+            console.log('#4 wykona się bo 9 większe od 5')
+        }
+
+        if (data1 > 5) {
+            console.log('#5 wykona się bo data1 < 5')
+        }
+        else {
+            console.log('#5 wykona sie bo data1 większe od 5')
+        }
+
+        let info = 23;
+
+        if (info < 5) {
+            console.log('info mniejsze od zera')
+        } else if (info == 5) {
+            console.log('info rowne jest 0')
+        } else if (info == 2) {
+            console.log('info rowne jest 2')
+        }
+
+        /*
+            sprawdzenie temperatury w stopniach z zmiennej temperture
+            - czy temperature < 0  "bierzemy kurtkę"
+            - czy temperature == 0  "bierzemy lekką kurtkę"
+            - czy temperature >= 20  "bierzemy krótki rękaw"
+            - else "zostajemy w domu"
+        */
+
+        let temperature = 15;
+
+        if (temperature < 0) {
+            console.log('bierzemy kurtkę')
+        } else if (temperature == 0) {
+            console.log('bierzemy lekką kurtkę')
+        } else if (temperature >= 20) {
+            console.log('bierzemy krótki rękaw')
+        } else {
+            console.log('zostajemy w domu')
+        }
+
+        /*
+   Napisz program sprawdzający liczbę całkowitą w zmiennej
+   i prezentujący informację w konsoli czy jest ona:
+   dodatnia, ujemna czy równa zero.
+   Wykorzystaj instrukcje: 
+   if
+   else if
+   else
+*/
+
+        let number = 3;
+
+        if (number > 0) {
+            console.log('dodatnia')
+        } else if (number < 0) {
+            console.log('ujemna')
+        }
+        else {
+            console.log('rowna zero')
+        }
+    </script>
+</body>
+
+</html>
