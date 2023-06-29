@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function multiply(a, b, c) {
+            let result = a * b * c;
+            return a * b * c;
+        }
+        let multiplyResult = multiply(2, 3, 10);
+        console.log(multiplyResult);
+
+        let multiplyResult2 = multiply(5, 5, 5)
+        console.log(multiplyResult2);
+
+        //stworz funkcje substract
+        function substract(a, b, c) {
+            return a - b - c;
+        }
+        let substractResult = substract(4, 5, 6);
+        console.log(substractResult);
+
+        function getSomeNumber() {
+            return 79;
+        }
+        console.log(getSomeNumber());
+
+        let money = 1000;
+        let interestRate = 0.05;
+
+        function calculateInvestmentResult(money, interestRate) {
+            return money + (money * interestRate);
+        }
+        let investmentResult = calculateInvestmentResult(money, interestRate);
+        console.log(investmentResult);
+        console.log(calculateInvestmentResult(5000, 0.10));
+    </script>
+</body>
+
+</html>

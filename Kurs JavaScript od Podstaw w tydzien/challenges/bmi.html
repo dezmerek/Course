@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+            1. Stwórz funkcję calculatBmi() która przyjmuje dwa 
+            parametry weight i height. Wewnątrz funkcji oblicz 
+            bmi na podstawie wzoru: waga / wzrost * wzrost
+            2. Wyświetl BMI w konsoli dla wartości 
+            wagi: 75 i wzrostu 1.75
+            W kosnoli podaj informację czy bmi jest w normie według zakresu:
+            18.5 < prawidłowe BMI < 24.9
+        */
+        function calculatBmi(weight, height) {
+            let bmi = weight / (height * height);
+            console.log('Waga: ' + weight + ' Wzrost: ' + height);
+
+            if (18.5 < bmi < 24.9) {
+                console.log('BMI: ' + bmi + ' norma')
+            } else {
+                console.log('BMI: ' + bmi + ' nono')
+            }
+        }
+
+        calculatBmi(75, 1.75);
+    </script>
+</body>
+
+</html>
