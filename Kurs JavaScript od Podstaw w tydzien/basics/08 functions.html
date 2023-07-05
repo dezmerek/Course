@@ -40,6 +40,39 @@
         let investmentResult = calculateInvestmentResult(money, interestRate);
         console.log(investmentResult);
         console.log(calculateInvestmentResult(5000, 0.10));
+
+        //function expression
+        let add10 = function (num) {
+            return num + 10;
+        }
+
+        console.log(add10(15));
+
+        add10 = function (num) {
+            let sum = num + 10;
+            console.log(sum);
+            return sum;
+        }
+
+        const sum = add10(20);
+        console.log(sum);
+
+        function downloadFile(fileName, onComplete, onError) {
+            if (fileName.length > 5) {
+                onComplete('succes');
+            } else {
+                onError('Error!')
+            }
+        }
+
+        downloadFile('fileName123.txt',
+            function (str) {
+                console.log('OnComplete: ', str);
+            },
+            function (str) {
+                console.log('Error: ', str);
+            }
+        )
     </script>
 </body>
 
