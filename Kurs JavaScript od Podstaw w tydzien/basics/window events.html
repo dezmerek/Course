@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        window.addEventListener('online', function (event) {
+            console.log('online: uzyskanie dostepu do internetu');
+        });
+
+        window.ononline = function (event) {
+            console.log('ononline: uzyskanie dostepu do internetu');
+        };
+
+        window.addEventListener('offline', function (event) {
+            console.log('offline: utrata dostępu do internetu');
+        });
+
+        window.onoffline = function (event) {
+            console.log('onoffline: utrata dostępu do internetu');
+        };
+
+        window.addEventListener('offline', function (event) {
+            console.log('offline: utrata dostępu do internetu');
+        });
+
+        window.onoffline = function (event) {
+            console.log('onoffline: utrata dostępu do internetu');
+        };
+    </script>
+</body>
+
+</html>
